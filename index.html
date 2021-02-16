@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>check-box</title>
+<style>
+</style>
+</head>
+<script>
+    function Registrati() {
+        privacy=formRegistrazione.checkBoxPrivacy.checked;   
+        //alert(privacy);    stamperà il valore booleano corrispondente
+
+        if(privacy) {     //(privacy) = (privacy==true) 
+            alert("privacy accettata");
+        }
+        else {
+            alert("Privacy non accettata");
+        }
+    }
+</script>
+<body>
+    <form name="formRegistrazione">
+        <label><input type="checkbox" id="checkBoxPrivacy"> Privacy checkbox</label>
+        <br>
+        <input type="submit" id="submitRegistrati" value="Registrati" onclick="Registrati()">
+    </form>
+</body>
+</html>
